@@ -49,7 +49,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Feb 26, 2022 04:31:58 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Feb 26, 2022 05:35:06 PM</span>
 				</a>
 			</li>
 			<li>
@@ -173,14 +173,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>loginTrue</span>
-						<span class='test-time'>Feb 26, 2022 04:31:58 PM</span>
+						<span class='test-time'>Feb 26, 2022 05:35:06 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 26, 2022 04:31:58 PM</span>
-	<span class='label end-time'>Feb 26, 2022 04:31:59 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+267ms</span>
+	<span class='label start-time'>Feb 26, 2022 05:35:06 PM</span>
+	<span class='label end-time'>Feb 26, 2022 05:35:06 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+272ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -199,13 +199,13 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>4:31:59 PM</td>
+					<td class='timestamp'>5:35:06 PM</td>
 					<td class='step-details'><textarea>org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown database 'course'
+### Error querying database.  Cause: java.sql.SQLException: The server time zone value '???迆㊣那℅??㊣??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
 ### The error may exist in mapper/SQLMapper.xml
 ### The error may involve org.alanhou.model.loginCase
 ### The error occurred while executing a query
-### Cause: java.sql.SQLSyntaxErrorException: Unknown database 'course'
+### Cause: java.sql.SQLException: The server time zone value '???迆㊣那℅??㊣??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
 	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
@@ -240,10 +240,13 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+Caused by: java.sql.SQLException: The server time zone value '???迆㊣那℅??㊣??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:76)
 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
@@ -266,6 +269,20 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
 	... 32 more
+Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The server time zone value '???迆㊣那℅??㊣??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85)
+	at com.mysql.cj.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:132)
+	at com.mysql.cj.protocol.a.NativeProtocol.configureTimezone(NativeProtocol.java:2234)
+	at com.mysql.cj.protocol.a.NativeProtocol.initServerSession(NativeProtocol.java:2258)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:1319)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:966)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 52 more
 </textarea></td>
 				</tr>
 			</tbody>
@@ -278,14 +295,14 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>loginFalse</span>
-						<span class='test-time'>Feb 26, 2022 04:31:59 PM</span>
+						<span class='test-time'>Feb 26, 2022 05:35:06 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 26, 2022 04:31:59 PM</span>
-	<span class='label end-time'>Feb 26, 2022 04:31:59 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+18ms</span>
+	<span class='label start-time'>Feb 26, 2022 05:35:06 PM</span>
+	<span class='label end-time'>Feb 26, 2022 05:35:06 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+20ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -304,13 +321,13 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>4:31:59 PM</td>
+					<td class='timestamp'>5:35:06 PM</td>
 					<td class='step-details'><textarea>org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown database 'course'
+### Error querying database.  Cause: java.sql.SQLException: The server time zone value '???迆㊣那℅??㊣??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
 ### The error may exist in mapper/SQLMapper.xml
 ### The error may involve org.alanhou.model.loginCase
 ### The error occurred while executing a query
-### Cause: java.sql.SQLSyntaxErrorException: Unknown database 'course'
+### Cause: java.sql.SQLException: The server time zone value '???迆㊣那℅??㊣??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
 	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
@@ -345,10 +362,13 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+Caused by: java.sql.SQLException: The server time zone value '???迆㊣那℅??㊣??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:76)
 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
@@ -371,6 +391,20 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
 	... 32 more
+Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The server time zone value '???迆㊣那℅??㊣??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85)
+	at com.mysql.cj.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:132)
+	at com.mysql.cj.protocol.a.NativeProtocol.configureTimezone(NativeProtocol.java:2234)
+	at com.mysql.cj.protocol.a.NativeProtocol.initServerSession(NativeProtocol.java:2258)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:1319)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:966)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 52 more
 </textarea></td>
 				</tr>
 			</tbody>
@@ -382,14 +416,14 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 				
 				<li class='test displayed active  skip' status='skip' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>getUserListInfo</span>
-						<span class='test-time'>Feb 26, 2022 04:31:59 PM</span>
+						<span class='test-name'>updateUserInfo</span>
+						<span class='test-time'>Feb 26, 2022 05:35:06 PM</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 26, 2022 04:31:59 PM</span>
-	<span class='label end-time'>Feb 26, 2022 04:31:59 PM</span>
+	<span class='label start-time'>Feb 26, 2022 05:35:06 PM</span>
+	<span class='label end-time'>Feb 26, 2022 05:35:06 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-steps'>
@@ -404,8 +438,8 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 			<tbody>
 				<tr class='log' status='skip'>
 					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>4:31:59 PM</td>
-					<td class='step-details'><pre>java.lang.Throwable: Method GetUserInfoListTest.getUserListInfo()[pri:0, instance:org.alanhou.cases.GetUserInfoListTest@3a03464] depends on not successfully finished methods in group "loginTrue"
+					<td class='timestamp'>5:35:06 PM</td>
+					<td class='step-details'><pre>java.lang.Throwable: Method UpdateUserInfoTest.updateUserInfo()[pri:0, instance:org.alanhou.cases.UpdateUserInfoTest@4909b8da] depends on not successfully finished methods in group "loginTrue"
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -440,13 +474,13 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 				<li class='test displayed active  skip' status='skip' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>addUser</span>
-						<span class='test-time'>Feb 26, 2022 04:31:59 PM</span>
+						<span class='test-time'>Feb 26, 2022 05:35:06 PM</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 26, 2022 04:31:59 PM</span>
-	<span class='label end-time'>Feb 26, 2022 04:31:59 PM</span>
+	<span class='label start-time'>Feb 26, 2022 05:35:06 PM</span>
+	<span class='label end-time'>Feb 26, 2022 05:35:06 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-steps'>
@@ -461,7 +495,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 			<tbody>
 				<tr class='log' status='skip'>
 					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>4:31:59 PM</td>
+					<td class='timestamp'>5:35:06 PM</td>
 					<td class='step-details'><pre>java.lang.Throwable: Method AddUserTest.addUser()[pri:0, instance:org.alanhou.cases.AddUserTest@1936f0f5] depends on not successfully finished methods in group "loginTrue"
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -497,13 +531,13 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 				<li class='test displayed active  skip' status='skip' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>getUserInfo</span>
-						<span class='test-time'>Feb 26, 2022 04:31:59 PM</span>
+						<span class='test-time'>Feb 26, 2022 05:35:06 PM</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 26, 2022 04:31:59 PM</span>
-	<span class='label end-time'>Feb 26, 2022 04:31:59 PM</span>
+	<span class='label start-time'>Feb 26, 2022 05:35:06 PM</span>
+	<span class='label end-time'>Feb 26, 2022 05:35:06 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-steps'>
@@ -518,7 +552,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 			<tbody>
 				<tr class='log' status='skip'>
 					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>4:31:59 PM</td>
+					<td class='timestamp'>5:35:06 PM</td>
 					<td class='step-details'><pre>java.lang.Throwable: Method GetUserInfoTest.getUserInfo()[pri:0, instance:org.alanhou.cases.GetUserInfoTest@6615435c] depends on not successfully finished methods in group "loginTrue"
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -553,14 +587,14 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 				
 				<li class='test displayed active  skip' status='skip' bdd='false' test-id='6'>
 					<div class='test-heading'>
-						<span class='test-name'>updateUserInfo</span>
-						<span class='test-time'>Feb 26, 2022 04:31:59 PM</span>
+						<span class='test-name'>deleteUser</span>
+						<span class='test-time'>Feb 26, 2022 05:35:06 PM</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 26, 2022 04:31:59 PM</span>
-	<span class='label end-time'>Feb 26, 2022 04:31:59 PM</span>
+	<span class='label start-time'>Feb 26, 2022 05:35:06 PM</span>
+	<span class='label end-time'>Feb 26, 2022 05:35:06 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-steps'>
@@ -575,8 +609,8 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 			<tbody>
 				<tr class='log' status='skip'>
 					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>4:31:59 PM</td>
-					<td class='step-details'><pre>java.lang.Throwable: Method UpdateUserInfoTest.updateUserInfo()[pri:0, instance:org.alanhou.cases.UpdateUserInfoTest@4909b8da] depends on not successfully finished methods in group "loginTrue"
+					<td class='timestamp'>5:35:06 PM</td>
+					<td class='step-details'><pre>java.lang.Throwable: Method UpdateUserInfoTest.deleteUser()[pri:0, instance:org.alanhou.cases.UpdateUserInfoTest@4909b8da] depends on not successfully finished methods in group "loginTrue"
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -610,14 +644,14 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 				
 				<li class='test displayed active  skip' status='skip' bdd='false' test-id='7'>
 					<div class='test-heading'>
-						<span class='test-name'>deleteUser</span>
-						<span class='test-time'>Feb 26, 2022 04:31:59 PM</span>
+						<span class='test-name'>getUserListInfo</span>
+						<span class='test-time'>Feb 26, 2022 05:35:06 PM</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 26, 2022 04:31:59 PM</span>
-	<span class='label end-time'>Feb 26, 2022 04:31:59 PM</span>
+	<span class='label start-time'>Feb 26, 2022 05:35:06 PM</span>
+	<span class='label end-time'>Feb 26, 2022 05:35:06 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-steps'>
@@ -632,8 +666,8 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 			<tbody>
 				<tr class='log' status='skip'>
 					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>4:31:59 PM</td>
-					<td class='step-details'><pre>java.lang.Throwable: Method UpdateUserInfoTest.deleteUser()[pri:0, instance:org.alanhou.cases.UpdateUserInfoTest@4909b8da] depends on not successfully finished methods in group "loginTrue"
+					<td class='timestamp'>5:35:06 PM</td>
+					<td class='step-details'><pre>java.lang.Throwable: Method GetUserInfoListTest.getUserListInfo()[pri:0, instance:org.alanhou.cases.GetUserInfoListTest@3a03464] depends on not successfully finished methods in group "loginTrue"
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -738,7 +772,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 26, 2022 04:31:58 PM</td>
+										<td>Feb 26, 2022 05:35:06 PM</td>
 										<td class='linked' test-id='1'>loginTrue</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -772,7 +806,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 26, 2022 04:31:59 PM</td>
+										<td>Feb 26, 2022 05:35:06 PM</td>
 										<td class='linked' test-id='2'>loginFalse</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -835,14 +869,14 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Feb 26, 2022 04:31:58 PM</td>
+                                                        <td>Feb 26, 2022 05:35:06 PM</td>
                                                         <td class='linked' test-id='1'>loginTrue</td>
                                                         <td><pre><textarea>org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown database 'course'
+### Error querying database.  Cause: java.sql.SQLException: The server time zone value '???迆㊣那℅??㊣??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
 ### The error may exist in mapper/SQLMapper.xml
 ### The error may involve org.alanhou.model.loginCase
 ### The error occurred while executing a query
-### Cause: java.sql.SQLSyntaxErrorException: Unknown database 'course'
+### Cause: java.sql.SQLException: The server time zone value '???迆㊣那℅??㊣??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
 	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
@@ -877,10 +911,13 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+Caused by: java.sql.SQLException: The server time zone value '???迆㊣那℅??㊣??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:76)
 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
@@ -903,17 +940,31 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
 	... 32 more
+Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The server time zone value '???迆㊣那℅??㊣??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85)
+	at com.mysql.cj.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:132)
+	at com.mysql.cj.protocol.a.NativeProtocol.configureTimezone(NativeProtocol.java:2234)
+	at com.mysql.cj.protocol.a.NativeProtocol.initServerSession(NativeProtocol.java:2258)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:1319)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:966)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 52 more
 </textarea></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Feb 26, 2022 04:31:59 PM</td>
+                                                        <td>Feb 26, 2022 05:35:06 PM</td>
                                                         <td class='linked' test-id='2'>loginFalse</td>
                                                         <td><pre><textarea>org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown database 'course'
+### Error querying database.  Cause: java.sql.SQLException: The server time zone value '???迆㊣那℅??㊣??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
 ### The error may exist in mapper/SQLMapper.xml
 ### The error may involve org.alanhou.model.loginCase
 ### The error occurred while executing a query
-### Cause: java.sql.SQLSyntaxErrorException: Unknown database 'course'
+### Cause: java.sql.SQLException: The server time zone value '???迆㊣那℅??㊣??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
 	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
@@ -948,10 +999,13 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+Caused by: java.sql.SQLException: The server time zone value '???迆㊣那℅??㊣??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:76)
 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
@@ -974,6 +1028,20 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
 	... 32 more
+Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The server time zone value '???迆㊣那℅??㊣??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85)
+	at com.mysql.cj.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:132)
+	at com.mysql.cj.protocol.a.NativeProtocol.configureTimezone(NativeProtocol.java:2234)
+	at com.mysql.cj.protocol.a.NativeProtocol.initServerSession(NativeProtocol.java:2258)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:1319)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:966)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 52 more
 </textarea></pre></td>
                                                     </tr>
                                         </tbody>
@@ -998,9 +1066,9 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Feb 26, 2022 04:31:59 PM</td>
-                                                        <td class='linked' test-id='3'>getUserListInfo</td>
-                                                        <td><pre><pre>java.lang.Throwable: Method GetUserInfoListTest.getUserListInfo()[pri:0, instance:org.alanhou.cases.GetUserInfoListTest@3a03464] depends on not successfully finished methods in group "loginTrue"
+                                                        <td>Feb 26, 2022 05:35:06 PM</td>
+                                                        <td class='linked' test-id='3'>updateUserInfo</td>
+                                                        <td><pre><pre>java.lang.Throwable: Method UpdateUserInfoTest.updateUserInfo()[pri:0, instance:org.alanhou.cases.UpdateUserInfoTest@4909b8da] depends on not successfully finished methods in group "loginTrue"
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -1026,7 +1094,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Feb 26, 2022 04:31:59 PM</td>
+                                                        <td>Feb 26, 2022 05:35:06 PM</td>
                                                         <td class='linked' test-id='4'>addUser</td>
                                                         <td><pre><pre>java.lang.Throwable: Method AddUserTest.addUser()[pri:0, instance:org.alanhou.cases.AddUserTest@1936f0f5] depends on not successfully finished methods in group "loginTrue"
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
@@ -1054,7 +1122,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Feb 26, 2022 04:31:59 PM</td>
+                                                        <td>Feb 26, 2022 05:35:06 PM</td>
                                                         <td class='linked' test-id='5'>getUserInfo</td>
                                                         <td><pre><pre>java.lang.Throwable: Method GetUserInfoTest.getUserInfo()[pri:0, instance:org.alanhou.cases.GetUserInfoTest@6615435c] depends on not successfully finished methods in group "loginTrue"
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
@@ -1082,9 +1150,9 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Feb 26, 2022 04:31:59 PM</td>
-                                                        <td class='linked' test-id='6'>updateUserInfo</td>
-                                                        <td><pre><pre>java.lang.Throwable: Method UpdateUserInfoTest.updateUserInfo()[pri:0, instance:org.alanhou.cases.UpdateUserInfoTest@4909b8da] depends on not successfully finished methods in group "loginTrue"
+                                                        <td>Feb 26, 2022 05:35:06 PM</td>
+                                                        <td class='linked' test-id='6'>deleteUser</td>
+                                                        <td><pre><pre>java.lang.Throwable: Method UpdateUserInfoTest.deleteUser()[pri:0, instance:org.alanhou.cases.UpdateUserInfoTest@4909b8da] depends on not successfully finished methods in group "loginTrue"
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -1110,9 +1178,9 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Feb 26, 2022 04:31:59 PM</td>
-                                                        <td class='linked' test-id='7'>deleteUser</td>
-                                                        <td><pre><pre>java.lang.Throwable: Method UpdateUserInfoTest.deleteUser()[pri:0, instance:org.alanhou.cases.UpdateUserInfoTest@4909b8da] depends on not successfully finished methods in group "loginTrue"
+                                                        <td>Feb 26, 2022 05:35:06 PM</td>
+                                                        <td class='linked' test-id='7'>getUserListInfo</td>
+                                                        <td><pre><pre>java.lang.Throwable: Method GetUserInfoListTest.getUserListInfo()[pri:0, instance:org.alanhou.cases.GetUserInfoListTest@3a03464] depends on not successfully finished methods in group "loginTrue"
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -1173,19 +1241,19 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'course'
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 26, 2022 04:31:58 PM</div>
+					<div class='panel-lead'>Feb 26, 2022 05:35:06 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 26, 2022 04:31:59 PM</div>
+			 		<div class='panel-lead'>Feb 26, 2022 05:35:06 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 0s+381ms</div>
+					<div class='panel-lead'>0h 0m 0s+405ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
