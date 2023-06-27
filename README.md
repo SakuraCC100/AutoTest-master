@@ -3,8 +3,6 @@ Java Automated Test Learning
 
 [Java接口自动化测试实战笔记](https://alanhou.org/java-automated-testing/)
 
-![Java Automated Test](http://p2.pstatp.com/large/pgc-image/7a2464aae82141079a59ce757f9485bd)
-
 ## 主要内容：
 
 * 综述
