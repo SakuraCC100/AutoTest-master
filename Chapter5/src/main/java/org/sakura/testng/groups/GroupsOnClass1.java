@@ -1,4 +1,4 @@
-package org.alanhou.testng.groups;
+package org.sakura.testng.groups;
 
 import org.testng.annotations.Test;
 

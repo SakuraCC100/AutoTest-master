@@ -15,13 +15,13 @@
     -->
     <test name="demo1">
         <classes name="d1">
-            <class name="org.alanhou.testng.multiThread.MultiThreadOnXml" />
+            <class name="org.sakura.testng.multiThread.MultiThreadOnXml" />
         </classes>
     </test>
 
     <test name="demo2">
         <classes name="d2">
-            <class name="org.alanhou.testng.multiThread.MultiThreadOnXml" />
+            <class name="org.sakura.testng.multiThread.MultiThreadOnXml" />
         </classes>
     </test>
 </suite>

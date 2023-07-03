@@ -1,4 +1,4 @@
-package org.alanhou.testng.suite;
+package org.sakura.testng.suite;
 
 import org.testng.annotations.Test;
 

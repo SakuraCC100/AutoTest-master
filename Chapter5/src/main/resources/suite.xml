@@ -2,14 +2,14 @@
 <suite name="test">
     <test name="login">
         <classes>
-            <class name="org.alanhou.testng.suite.SuiteConfig"></class>
-            <class name="org.alanhou.testng.suite.LoginTest"></class>
+            <class name="org.sakura.testng.suite.SuiteConfig"></class>
+            <class name="org.sakura.testng.suite.LoginTest"></class>
         </classes>
     </test>
     <test name="pay">
         <classes>
-            <class name="org.alanhou.testng.suite.SuiteConfig"></class>
-            <class name="org.alanhou.testng.suite.PayTest"></class>
+            <class name="org.sakura.testng.suite.SuiteConfig"></class>
+            <class name="org.sakura.testng.suite.PayTest"></class>
         </classes>
     </test>
 </suite>

@@ -3,9 +3,9 @@
 <suite name="suitename">
     <test name="runAll">
         <classes>
-            <class name="org.alanhou.testng.groups.GroupsOnClass1"></class>
-            <class name="org.alanhou.testng.groups.GroupsOnClass2"></class>
-            <class name="org.alanhou.testng.groups.GroupsOnClass3"></class>
+            <class name="org.sakura.testng.groups.GroupsOnClass1"></class>
+            <class name="org.sakura.testng.groups.GroupsOnClass2"></class>
+            <class name="org.sakura.testng.groups.GroupsOnClass3"></class>
         </classes>
     </test>
 
@@ -16,9 +16,9 @@
             </run>
         </groups>
         <classes>
-            <class name="org.alanhou.testng.groups.GroupsOnClass1"></class>
-            <class name="org.alanhou.testng.groups.GroupsOnClass2"></class>
-            <class name="org.alanhou.testng.groups.GroupsOnClass3"></class>
+            <class name="org.sakura.testng.groups.GroupsOnClass1"></class>
+            <class name="org.sakura.testng.groups.GroupsOnClass2"></class>
+            <class name="org.sakura.testng.groups.GroupsOnClass3"></class>
         </classes>
     </test>
 </suite>

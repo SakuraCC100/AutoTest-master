@@ -1,4 +1,4 @@
-package org.alanhou.testng.parameter;
+package org.sakura.testng.parameter;
 
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;

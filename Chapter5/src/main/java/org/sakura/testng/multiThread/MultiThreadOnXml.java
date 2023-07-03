@@ -1,4 +1,4 @@
-package org.alanhou.testng.multiThread;
+package org.sakura.testng.multiThread;
 
 import org.testng.annotations.Test;
 
