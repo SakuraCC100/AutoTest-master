@@ -2,29 +2,29 @@
 <suite name="用户管理系统测试套件">
     <test name="用户管理系统测试用例">
         <classes>
-            <class name="org.alanhou.cases.LoginTest">
+            <class name="org.sakura.cases.LoginTest">
                 <methods>
                     <include name="loginTrue"/>
                     <include name="loginFalse"/>
                 </methods>
             </class>
-            <class name="org.alanhou.cases.AddUserTest">
+            <class name="org.sakura.cases.AddUserTest">
                 <methods>
                     <include name="addUser"/>
                 </methods>
             </class>
-            <class name="org.alanhou.cases.GetUserInfoTest">
+            <class name="org.sakura.cases.GetUserInfoTest">
                 <methods>
                     <include name="getUserInfo"/>
                 </methods>
             </class>
-            <class name="org.alanhou.cases.UpdateUserInfoTest">
+            <class name="org.sakura.cases.UpdateUserInfoTest">
                 <methods>
                     <include name="updateUserInfo"/>
                     <include name="deleteUser"/>
                 </methods>
             </class>
-            <class name="org.alanhou.cases.GetUserInfoListTest">
+            <class name="org.sakura.cases.GetUserInfoListTest">
                 <methods>
                     <include name="getUserListInfo"/>
                 </methods>
@@ -32,6 +32,6 @@
         </classes>
     </test>
     <listeners>
-        <listener class-name="org.alanhou.config.ExtentTestNGIReporterListener"/>
+        <listener class-name="org.sakura.config.ExtentTestNGIReporterListener"/>
     </listeners>
 </suite>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.alanhou">
+<mapper namespace="org.sakura">
     <!--登录接口 sql-->
-    <select id="login" parameterType="org.alanhou.model.User" resultType="Integer">
+    <select id="login" parameterType="org.sakura.model.User" resultType="Integer">
 
         select count(*) from user
         where userName=#{userName}
@@ -11,14 +11,14 @@
     </select>
 
     <!--添加用户接口 sql-->
-    <insert id="addUser" parameterType="org.alanhou.model.User">
+    <insert id="addUser" parameterType="org.sakura.model.User">
         insert into
         user (userName,password,sex,age,permission,isDelete)
         values (#{userName},#{password},#{sex},#{age},#{permission},#{isDelete});
     </insert>
     
     <!--获取用户 sql-->
-    <select id="getUserInfo" parameterType="org.alanhou.model.User" resultType="org.alanhou.model.User">
+    <select id="getUserInfo" parameterType="org.sakura.model.User" resultType="org.sakura.model.User">
         select * from user
         <trim prefix="WHERE" prefixOverrides="and">
             <if test="null != id and '' != id">
@@ -46,7 +46,7 @@
     </select>
     
     <!--更新/删除用户信息-->
-    <update id="updateUserInfo" parameterType="org.alanhou.model.User">
+    <update id="updateUserInfo" parameterType="org.sakura.model.User">
         update user
         <trim prefix="SET" suffixOverrides=",">
             <if test="null != userName and '' != userName">

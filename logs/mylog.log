@@ -1,7 +1,7 @@
-2018-11-11 14:04:15.744 [main] INFO  org.alanhou.Application - Starting Application on 192.168.0.3 with PID 4639 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
-2018-11-11 14:04:15.748 [main] INFO  org.alanhou.Application - No active profile set, falling back to default profiles: default
+2018-11-11 14:04:15.744 [main] INFO  org.sakura.Application - Starting Application on 192.168.0.3 with PID 4639 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
+2018-11-11 14:04:15.748 [main] INFO  org.sakura.Application - No active profile set, falling back to default profiles: default
 2018-11-11 14:04:15.796 [main] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Nov 11 14:04:15 CST 2018]; root of context hierarchy
-2018-11-11 14:04:16.299 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.alanhou]' package. Please check your configuration.
+2018-11-11 14:04:16.299 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.sakura]' package. Please check your configuration.
 2018-11-11 14:04:16.889 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
 2018-11-11 14:04:16.915 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
 2018-11-11 14:04:16.916 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
@@ -41,7 +41,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
-	at org.alanhou.Application.main(Application.java:16)
+	at org.sakura.Application.main(Application.java:16)
 Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/workspace/learning/AutoTest/Chapter11/target/classes/mapper/mysql.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 33; Document root element "mapper", must match DOCTYPE root "configuration".
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
@@ -124,10 +124,10 @@ Caused by: org.xml.sax.SAXParseException: Document root element "mapper", must m
 	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
 	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
 	... 65 common frames omitted
-2018-11-11 14:06:51.342 [main] INFO  org.alanhou.Application - Starting Application on 192.168.0.3 with PID 4661 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
-2018-11-11 14:06:51.347 [main] INFO  org.alanhou.Application - No active profile set, falling back to default profiles: default
+2018-11-11 14:06:51.342 [main] INFO  org.sakura.Application - Starting Application on 192.168.0.3 with PID 4661 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
+2018-11-11 14:06:51.347 [main] INFO  org.sakura.Application - No active profile set, falling back to default profiles: default
 2018-11-11 14:06:51.392 [main] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55182842: startup date [Sun Nov 11 14:06:51 CST 2018]; root of context hierarchy
-2018-11-11 14:06:51.886 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.alanhou]' package. Please check your configuration.
+2018-11-11 14:06:51.886 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.sakura]' package. Please check your configuration.
 2018-11-11 14:06:52.456 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
 2018-11-11 14:06:52.476 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
 2018-11-11 14:06:52.476 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
@@ -167,7 +167,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
-	at org.alanhou.Application.main(Application.java:16)
+	at org.sakura.Application.main(Application.java:16)
 Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/workspace/learning/AutoTest/Chapter11/target/classes/mapper/mysql.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 33; Document root element "mapper", must match DOCTYPE root "configuration".
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
@@ -250,10 +250,10 @@ Caused by: org.xml.sax.SAXParseException: Document root element "mapper", must m
 	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
 	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
 	... 65 common frames omitted
-2018-11-11 14:25:08.801 [main] INFO  org.alanhou.Application - Starting Application on 192.168.0.3 with PID 4793 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
-2018-11-11 14:25:08.804 [main] INFO  org.alanhou.Application - No active profile set, falling back to default profiles: default
+2018-11-11 14:25:08.801 [main] INFO  org.sakura.Application - Starting Application on 192.168.0.3 with PID 4793 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
+2018-11-11 14:25:08.804 [main] INFO  org.sakura.Application - No active profile set, falling back to default profiles: default
 2018-11-11 14:25:08.850 [main] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@368f2016: startup date [Sun Nov 11 14:25:08 CST 2018]; root of context hierarchy
-2018-11-11 14:25:09.350 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.alanhou]' package. Please check your configuration.
+2018-11-11 14:25:09.350 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.sakura]' package. Please check your configuration.
 2018-11-11 14:25:09.889 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
 2018-11-11 14:25:09.910 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
 2018-11-11 14:25:09.910 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
@@ -293,7 +293,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
-	at org.alanhou.Application.main(Application.java:16)
+	at org.sakura.Application.main(Application.java:16)
 Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/workspace/learning/AutoTest/Chapter11/target/classes/mapper/mysql.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 33; Document root element "mapper", must match DOCTYPE root "configuration".
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
@@ -376,10 +376,10 @@ Caused by: org.xml.sax.SAXParseException: Document root element "mapper", must m
 	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
 	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
 	... 65 common frames omitted
-2018-11-11 14:33:55.595 [main] INFO  org.alanhou.Application - Starting Application on 192.168.0.3 with PID 4868 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
-2018-11-11 14:33:55.599 [main] INFO  org.alanhou.Application - No active profile set, falling back to default profiles: default
+2018-11-11 14:33:55.595 [main] INFO  org.sakura.Application - Starting Application on 192.168.0.3 with PID 4868 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
+2018-11-11 14:33:55.599 [main] INFO  org.sakura.Application - No active profile set, falling back to default profiles: default
 2018-11-11 14:33:55.643 [main] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@368f2016: startup date [Sun Nov 11 14:33:55 CST 2018]; root of context hierarchy
-2018-11-11 14:33:56.151 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.alanhou]' package. Please check your configuration.
+2018-11-11 14:33:56.151 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.sakura]' package. Please check your configuration.
 2018-11-11 14:33:56.727 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
 2018-11-11 14:33:56.747 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
 2018-11-11 14:33:56.747 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
@@ -419,7 +419,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
-	at org.alanhou.Application.main(Application.java:16)
+	at org.sakura.Application.main(Application.java:16)
 Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/workspace/learning/AutoTest/Chapter11/target/classes/mapper/mysql.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 33; Document root element "mapper", must match DOCTYPE root "configuration".
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
@@ -502,10 +502,10 @@ Caused by: org.xml.sax.SAXParseException: Document root element "mapper", must m
 	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
 	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
 	... 65 common frames omitted
-2018-11-11 14:36:14.458 [main] INFO  org.alanhou.Application - Starting Application on 192.168.0.3 with PID 4888 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
-2018-11-11 14:36:14.462 [main] INFO  org.alanhou.Application - No active profile set, falling back to default profiles: default
+2018-11-11 14:36:14.458 [main] INFO  org.sakura.Application - Starting Application on 192.168.0.3 with PID 4888 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
+2018-11-11 14:36:14.462 [main] INFO  org.sakura.Application - No active profile set, falling back to default profiles: default
 2018-11-11 14:36:14.510 [main] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4c583ecf: startup date [Sun Nov 11 14:36:14 CST 2018]; root of context hierarchy
-2018-11-11 14:36:14.993 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.alanhou]' package. Please check your configuration.
+2018-11-11 14:36:14.993 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.sakura]' package. Please check your configuration.
 2018-11-11 14:36:15.574 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
 2018-11-11 14:36:15.594 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
 2018-11-11 14:36:15.595 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
@@ -545,7 +545,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
-	at org.alanhou.Application.main(Application.java:16)
+	at org.sakura.Application.main(Application.java:16)
 Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/workspace/learning/AutoTest/Chapter11/target/classes/mapper/mysql.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 33; Document root element "mapper", must match DOCTYPE root "configuration".
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
@@ -628,10 +628,10 @@ Caused by: org.xml.sax.SAXParseException: Document root element "mapper", must m
 	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
 	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
 	... 65 common frames omitted
-2018-11-11 14:39:40.408 [main] INFO  org.alanhou.Application - Starting Application on 192.168.0.3 with PID 4905 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
-2018-11-11 14:39:40.412 [main] INFO  org.alanhou.Application - No active profile set, falling back to default profiles: default
+2018-11-11 14:39:40.408 [main] INFO  org.sakura.Application - Starting Application on 192.168.0.3 with PID 4905 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
+2018-11-11 14:39:40.412 [main] INFO  org.sakura.Application - No active profile set, falling back to default profiles: default
 2018-11-11 14:39:40.458 [main] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55182842: startup date [Sun Nov 11 14:39:40 CST 2018]; root of context hierarchy
-2018-11-11 14:39:40.948 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.alanhou]' package. Please check your configuration.
+2018-11-11 14:39:40.948 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.sakura]' package. Please check your configuration.
 2018-11-11 14:39:41.507 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
 2018-11-11 14:39:41.527 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
 2018-11-11 14:39:41.527 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
@@ -645,23 +645,23 @@ Caused by: org.xml.sax.SAXParseException: Document root element "mapper", must m
 2018-11-11 14:39:41.637 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
 2018-11-11 14:39:41.945 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-11-11 14:39:42.114 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55182842: startup date [Sun Nov 11 14:39:40 CST 2018]; root of context hierarchy
-2018-11-11 14:39:42.163 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserCount],methods=[GET]}" onto public int org.alanhou.controller.Demo.getUserCount()
+2018-11-11 14:39:42.163 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserCount],methods=[GET]}" onto public int org.sakura.controller.Demo.getUserCount()
 2018-11-11 14:39:42.169 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-11-11 14:39:42.169 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-11-11 14:39:42.244 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-11-11 14:39:42.244 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-11-11 14:39:42.436 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
 2018-11-11 14:39:42.489 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2018-11-11 14:39:42.493 [main] INFO  org.alanhou.Application - Started Application in 2.363 seconds (JVM running for 3.0)
+2018-11-11 14:39:42.493 [main] INFO  org.sakura.Application - Started Application in 2.363 seconds (JVM running for 3.0)
 2018-11-11 14:40:21.201 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
 2018-11-11 14:40:21.201 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
 2018-11-11 14:40:21.216 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
 2018-11-11 14:41:19.819 [Thread-8] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55182842: startup date [Sun Nov 11 14:39:40 CST 2018]; root of context hierarchy
 2018-11-11 14:41:19.822 [Thread-8] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
-2018-11-11 14:41:21.838 [main] INFO  org.alanhou.Application - Starting Application on 192.168.0.3 with PID 4919 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
-2018-11-11 14:41:21.842 [main] INFO  org.alanhou.Application - No active profile set, falling back to default profiles: default
+2018-11-11 14:41:21.838 [main] INFO  org.sakura.Application - Starting Application on 192.168.0.3 with PID 4919 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
+2018-11-11 14:41:21.842 [main] INFO  org.sakura.Application - No active profile set, falling back to default profiles: default
 2018-11-11 14:41:21.884 [main] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1f2586d6: startup date [Sun Nov 11 14:41:21 CST 2018]; root of context hierarchy
-2018-11-11 14:41:22.365 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.alanhou]' package. Please check your configuration.
+2018-11-11 14:41:22.365 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.sakura]' package. Please check your configuration.
 2018-11-11 14:41:22.896 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
 2018-11-11 14:41:22.916 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
 2018-11-11 14:41:22.916 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
@@ -675,23 +675,23 @@ Caused by: org.xml.sax.SAXParseException: Document root element "mapper", must m
 2018-11-11 14:41:23.035 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
 2018-11-11 14:41:23.340 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-11-11 14:41:23.482 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1f2586d6: startup date [Sun Nov 11 14:41:21 CST 2018]; root of context hierarchy
-2018-11-11 14:41:23.523 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserCount],methods=[GET]}" onto public int org.alanhou.controller.Demo.getUserCount()
+2018-11-11 14:41:23.523 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserCount],methods=[GET]}" onto public int org.sakura.controller.Demo.getUserCount()
 2018-11-11 14:41:23.527 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-11-11 14:41:23.528 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-11-11 14:41:23.549 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-11-11 14:41:23.550 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-11-11 14:41:23.790 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
 2018-11-11 14:41:23.837 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2018-11-11 14:41:23.841 [main] INFO  org.alanhou.Application - Started Application in 2.345 seconds (JVM running for 3.125)
+2018-11-11 14:41:23.841 [main] INFO  org.sakura.Application - Started Application in 2.345 seconds (JVM running for 3.125)
 2018-11-11 14:41:31.388 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
 2018-11-11 14:41:31.388 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
 2018-11-11 14:41:31.401 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
 2018-11-11 14:42:15.228 [Thread-8] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1f2586d6: startup date [Sun Nov 11 14:41:21 CST 2018]; root of context hierarchy
 2018-11-11 14:42:15.232 [Thread-8] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
-2018-11-11 14:42:33.816 [main] INFO  org.alanhou.Application - Starting Application on 192.168.0.3 with PID 4942 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
-2018-11-11 14:42:33.823 [main] INFO  org.alanhou.Application - No active profile set, falling back to default profiles: default
+2018-11-11 14:42:33.816 [main] INFO  org.sakura.Application - Starting Application on 192.168.0.3 with PID 4942 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
+2018-11-11 14:42:33.823 [main] INFO  org.sakura.Application - No active profile set, falling back to default profiles: default
 2018-11-11 14:42:33.880 [main] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48f2bd5b: startup date [Sun Nov 11 14:42:33 CST 2018]; root of context hierarchy
-2018-11-11 14:42:34.420 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.alanhou]' package. Please check your configuration.
+2018-11-11 14:42:34.420 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.sakura]' package. Please check your configuration.
 2018-11-11 14:42:35.032 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
 2018-11-11 14:42:35.052 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
 2018-11-11 14:42:35.053 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
@@ -705,20 +705,20 @@ Caused by: org.xml.sax.SAXParseException: Document root element "mapper", must m
 2018-11-11 14:42:35.164 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
 2018-11-11 14:42:35.438 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-11-11 14:42:35.597 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48f2bd5b: startup date [Sun Nov 11 14:42:33 CST 2018]; root of context hierarchy
-2018-11-11 14:42:35.638 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserCount],methods=[GET]}" onto public int org.alanhou.controller.Demo.getUserCount()
+2018-11-11 14:42:35.638 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserCount],methods=[GET]}" onto public int org.sakura.controller.Demo.getUserCount()
 2018-11-11 14:42:35.642 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-11-11 14:42:35.643 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-11-11 14:42:35.666 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-11-11 14:42:35.666 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-11-11 14:42:35.908 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
 2018-11-11 14:42:35.958 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2018-11-11 14:42:35.962 [main] INFO  org.alanhou.Application - Started Application in 2.505 seconds (JVM running for 3.131)
+2018-11-11 14:42:35.962 [main] INFO  org.sakura.Application - Started Application in 2.505 seconds (JVM running for 3.131)
 2018-11-11 15:00:18.194 [Thread-8] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48f2bd5b: startup date [Sun Nov 11 14:42:33 CST 2018]; root of context hierarchy
 2018-11-11 15:00:18.198 [Thread-8] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
-2018-11-11 15:00:21.114 [main] INFO  org.alanhou.Application - Starting Application on 192.168.0.3 with PID 5034 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
-2018-11-11 15:00:21.118 [main] INFO  org.alanhou.Application - No active profile set, falling back to default profiles: default
+2018-11-11 15:00:21.114 [main] INFO  org.sakura.Application - Starting Application on 192.168.0.3 with PID 5034 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
+2018-11-11 15:00:21.118 [main] INFO  org.sakura.Application - No active profile set, falling back to default profiles: default
 2018-11-11 15:00:21.163 [main] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55182842: startup date [Sun Nov 11 15:00:21 CST 2018]; root of context hierarchy
-2018-11-11 15:00:21.668 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.alanhou]' package. Please check your configuration.
+2018-11-11 15:00:21.668 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.sakura]' package. Please check your configuration.
 2018-11-11 15:00:22.287 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
 2018-11-11 15:00:22.311 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
 2018-11-11 15:00:22.311 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
@@ -732,15 +732,15 @@ Caused by: org.xml.sax.SAXParseException: Document root element "mapper", must m
 2018-11-11 15:00:22.428 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
 2018-11-11 15:00:22.708 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-11-11 15:00:22.874 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55182842: startup date [Sun Nov 11 15:00:21 CST 2018]; root of context hierarchy
-2018-11-11 15:00:22.915 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserCount],methods=[GET]}" onto public int org.alanhou.controller.Demo.getUserCount()
-2018-11-11 15:00:22.988 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public int org.alanhou.controller.Demo.addUser(org.alanhou.model.User)
+2018-11-11 15:00:22.915 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserCount],methods=[GET]}" onto public int org.sakura.controller.Demo.getUserCount()
+2018-11-11 15:00:22.988 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public int org.sakura.controller.Demo.addUser(org.sakura.model.User)
 2018-11-11 15:00:22.991 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-11-11 15:00:22.991 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-11-11 15:00:23.012 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-11-11 15:00:23.012 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-11-11 15:00:23.189 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
 2018-11-11 15:00:23.241 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2018-11-11 15:00:23.245 [main] INFO  org.alanhou.Application - Started Application in 2.413 seconds (JVM running for 3.042)
+2018-11-11 15:00:23.245 [main] INFO  org.sakura.Application - Started Application in 2.413 seconds (JVM running for 3.042)
 2018-11-11 15:00:41.144 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
 2018-11-11 15:00:41.145 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
 2018-11-11 15:00:41.157 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
@@ -754,10 +754,10 @@ Caused by: org.xml.sax.SAXParseException: Document root element "mapper", must m
  at [Source: (PushbackInputStream); line: 3, column: 10]
 2018-11-11 15:15:45.728 [Thread-8] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55182842: startup date [Sun Nov 11 15:00:21 CST 2018]; root of context hierarchy
 2018-11-11 15:15:45.731 [Thread-8] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
-2018-11-11 15:15:48.838 [main] INFO  org.alanhou.Application - Starting Application on 192.168.0.3 with PID 5155 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
-2018-11-11 15:15:48.842 [main] INFO  org.alanhou.Application - No active profile set, falling back to default profiles: default
+2018-11-11 15:15:48.838 [main] INFO  org.sakura.Application - Starting Application on 192.168.0.3 with PID 5155 (/workspace/learning/AutoTest/Chapter11/target/classes started by alan in /workspace/learning/AutoTest)
+2018-11-11 15:15:48.842 [main] INFO  org.sakura.Application - No active profile set, falling back to default profiles: default
 2018-11-11 15:15:48.890 [main] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55182842: startup date [Sun Nov 11 15:15:48 CST 2018]; root of context hierarchy
-2018-11-11 15:15:49.386 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.alanhou]' package. Please check your configuration.
+2018-11-11 15:15:49.386 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.sakura]' package. Please check your configuration.
 2018-11-11 15:15:49.908 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
 2018-11-11 15:15:49.929 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
 2018-11-11 15:15:49.930 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
@@ -771,17 +771,17 @@ Caused by: org.xml.sax.SAXParseException: Document root element "mapper", must m
 2018-11-11 15:15:50.042 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
 2018-11-11 15:15:50.336 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-11-11 15:15:50.477 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55182842: startup date [Sun Nov 11 15:15:48 CST 2018]; root of context hierarchy
-2018-11-11 15:15:50.581 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public int org.alanhou.controller.Demo.addUser(org.alanhou.model.User)
-2018-11-11 15:15:50.582 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/deleteUser],methods=[POST]}" onto public int org.alanhou.controller.Demo.delUser(int)
-2018-11-11 15:15:50.582 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserCount],methods=[GET]}" onto public int org.alanhou.controller.Demo.getUserCount()
-2018-11-11 15:15:50.582 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUser],methods=[POST]}" onto public int org.alanhou.controller.Demo.updateUser(org.alanhou.model.User)
+2018-11-11 15:15:50.581 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public int org.sakura.controller.Demo.addUser(org.sakura.model.User)
+2018-11-11 15:15:50.582 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/deleteUser],methods=[POST]}" onto public int org.sakura.controller.Demo.delUser(int)
+2018-11-11 15:15:50.582 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserCount],methods=[GET]}" onto public int org.sakura.controller.Demo.getUserCount()
+2018-11-11 15:15:50.582 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUser],methods=[POST]}" onto public int org.sakura.controller.Demo.updateUser(org.sakura.model.User)
 2018-11-11 15:15:50.585 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-11-11 15:15:50.585 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-11-11 15:15:50.606 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-11-11 15:15:50.606 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-11-11 15:15:50.788 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
 2018-11-11 15:15:50.841 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2018-11-11 15:15:50.845 [main] INFO  org.alanhou.Application - Started Application in 2.282 seconds (JVM running for 2.902)
+2018-11-11 15:15:50.845 [main] INFO  org.sakura.Application - Started Application in 2.282 seconds (JVM running for 2.902)
 2018-11-11 15:15:58.414 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
 2018-11-11 15:15:58.414 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
 2018-11-11 15:15:58.429 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms

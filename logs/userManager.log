@@ -1,6 +1,6 @@
-2022-02-26 16:21:33.559 [main] INFO  org.alanhou.Application - Starting Application on PC-20210811HKAS with PID 5504 (D:\idea_project\AutoTest-master\Chapter13\target\classes started by Administrator in D:\idea_project\AutoTest-master)
-2022-02-26 16:21:33.564 [main] INFO  org.alanhou.Application - No active profile set, falling back to default profiles: default
-2022-02-26 16:21:34.251 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.alanhou]' package. Please check your configuration.
+2022-02-26 16:21:33.559 [main] INFO  org.sakura.Application - Starting Application on PC-20210811HKAS with PID 5504 (D:\idea_project\AutoTest-master\Chapter13\target\classes started by Administrator in D:\idea_project\AutoTest-master)
+2022-02-26 16:21:33.564 [main] INFO  org.sakura.Application - No active profile set, falling back to default profiles: default
+2022-02-26 16:21:34.251 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.sakura]' package. Please check your configuration.
 2022-02-26 16:21:34.508 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a340a779] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2022-02-26 16:21:34.769 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
 2022-02-26 16:21:34.783 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
@@ -15,6 +15,6 @@
 2022-02-26 16:21:35.652 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
 2022-02-26 16:21:35.678 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
 2022-02-26 16:21:35.849 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2022-02-26 16:21:35.852 [main] INFO  org.alanhou.Application - Started Application in 2.59 seconds (JVM running for 4.869)
+2022-02-26 16:21:35.852 [main] INFO  org.sakura.Application - Started Application in 2.59 seconds (JVM running for 4.869)
 2022-02-26 16:21:43.983 [Thread-8] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
 2022-02-26 16:21:43.984 [Thread-8] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

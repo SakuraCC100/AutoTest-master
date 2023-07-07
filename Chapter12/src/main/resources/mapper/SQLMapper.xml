@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.alanhou.model">
+<mapper namespace="org.sakura.model">
     <!--获取登录接口 case-->
-    <select id="loginCase" parameterType="Integer" resultType="org.alanhou.model.LoginCase">
+    <select id="loginCase" parameterType="Integer" resultType="org.sakura.model.LoginCase">
         select * from loginCase where id = #{id}
     </select>
 
     <!--添加用户接口 case-->
-    <select id="addUserCase" parameterType="Integer" resultType="org.alanhou.model.AddUserCase">
+    <select id="addUserCase" parameterType="Integer" resultType="org.sakura.model.AddUserCase">
         select * from addUserCase where id = #{id}
     </select>
 
     <!--获取用户信息 case-->
-    <select id="getUserInfoCase" parameterType="Integer" resultType="org.alanhou.model.GetUserInfoCase">
+    <select id="getUserInfoCase" parameterType="Integer" resultType="org.sakura.model.GetUserInfoCase">
         select * from getUserInfoCase where id = #{id}
     </select>
 
     <!--获取用户列表 case-->
-    <select id="getUserListCase" parameterType="Integer" resultType="org.alanhou.model.GetUserListCase">
+    <select id="getUserListCase" parameterType="Integer" resultType="org.sakura.model.GetUserListCase">
         select * from getUserListCase where id = #{id}
     </select>
 
     <!--更新/删除用户 case-->
-    <select id="updateUserInfoCase" parameterType="Integer" resultType="org.alanhou.model.UpdateUserInfoCase">
+    <select id="updateUserInfoCase" parameterType="Integer" resultType="org.sakura.model.UpdateUserInfoCase">
         select * from updateUserInfoCase where id = #{id};
     </select>
 
     <!--添加用户信息-->
-    <select id="addUser" parameterType="org.alanhou.model.AddUserCase" resultType="org.alanhou.model.User">
+    <select id="addUser" parameterType="org.sakura.model.AddUserCase" resultType="org.sakura.model.User">
         select * from user where
         userName = #{userName}
         and password=#{password}
@@ -39,12 +39,12 @@
     </select>
 
     <!--获取用户信息-->
-    <select id="getUserInfo" parameterType="org.alanhou.model.GetUserInfoCase" resultType="org.alanhou.model.User">
+    <select id="getUserInfo" parameterType="org.sakura.model.GetUserInfoCase" resultType="org.sakura.model.User">
         select * from user where id=#{userId};
     </select>
 
     <!--获取用户列表-->
-    <select id="getUserList" parameterType="org.alanhou.model.GetUserListCase" resultType="org.alanhou.model.User">
+    <select id="getUserList" parameterType="org.sakura.model.GetUserListCase" resultType="org.sakura.model.User">
         select * from user
         <trim prefix="WHERE" prefixOverrides="and">
             <if test="null != userName and '' != userName">
@@ -61,7 +61,7 @@
     </select>
 
     <!--获取更新之后的数据-->
-    <select id="getUpdateUserInfo" parameterType="org.alanhou.model.UpdateUserInfoCase" resultType="org.alanhou.model.User">
+    <select id="getUpdateUserInfo" parameterType="org.sakura.model.UpdateUserInfoCase" resultType="org.sakura.model.User">
         select * from user
         <trim prefix="WHERE" prefixOverrides="and">
             <if test="null != userName and '' != userName">

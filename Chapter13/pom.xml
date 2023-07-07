@@ -28,7 +28,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>org.alanhou.Application</mainClass>
+                    <mainClass>org.sakura.Application</mainClass>
                 </configuration>
                 <executions>
                     <execution>

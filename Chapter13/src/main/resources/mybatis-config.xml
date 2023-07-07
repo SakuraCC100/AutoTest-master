@@ -5,7 +5,7 @@
             "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <package name="org.alanhou.model"/>
+        <package name="org.sakura.model"/>
     </typeAliases>
     <mappers>
         <mapper resource="mapper/mysql.xml"/>
